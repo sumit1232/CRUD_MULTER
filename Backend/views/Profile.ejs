@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile | Insta-Style</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fafafa;
+      color: #262626;
+    }
+
+    .profile-header {
+      max-width: 900px;
+      margin: 2rem auto;
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding: 1rem;
+    }
+
+    .profile-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-img img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #dbdbdb;
+    }
+
+    .profile-info {
+      flex: 2;
+    }
+
+    .profile-top {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .profile-top h2 {
+      font-size: 1.6rem;
+    }
+
+    .profile-top button {
+      padding: 0.4rem 1rem;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .profile-top button:hover {
+      background: #f1f1f1;
+    }
+
+    .profile-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .profile-stats span {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .profile-bio {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .profile-bio strong {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .post-gallery {
+      max-width: 900px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+      padding: 0 1rem 2rem;
+    }
+
+    .post-gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .post-gallery img:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Profile Header -->
+  <div class="profile-header">
+    <div class="profile-img">
+      <img src="https://via.placeholder.com/160" alt="Profile Picture">
+    </div>
+
+    <div class="profile-info">
+      <div class="profile-top">
+        <h2>@username</h2>
+        <button>Edit Profile</button>
+      </div>
+
+      <div class="profile-stats">
+        <p><span>120</span> posts</p>
+        <p><span>2.5k</span> followers</p>
+        <p><span>300</span> following</p>
+      </div>
+
+      <div class="profile-bio">
+        <strong>User Full Name</strong>
+        Web Developer • MERN Stack  
+        📍 Pune, India  
+        🌐 www.myportfolio.com
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Gallery -->
+  <div class="post-gallery">
+    <img src="https://picsum.photos/400/400?1" alt="Post 1">
+    <img src="https://picsum.photos/400/400?2" alt="Post 2">
+    <img src="https://picsum.photos/400/400?3" alt="Post 3">
+    <img src="https://picsum.photos/400/400?4" alt="Post 4">
+    <img src="https://picsum.photos/400/400?5" alt="Post 5">
+    <img src="https://picsum.photos/400/400?6" alt="Post 6">
+  </div>
+
+</body>
+</html>
